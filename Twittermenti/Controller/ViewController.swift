@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sentimentLabel: UILabel!
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
     }
