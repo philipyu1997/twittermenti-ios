@@ -10,7 +10,7 @@
 ## Overview
 ### Description
 
-Twittermenti is a sentiment analysis app of tweets that lets us know user sentiment toward products, brands or services in online conversations and feedback.
+Twittermenti is an app that performs sentiment analysis on tweets that lets you know how people feel about certain products, brands or services.
 
 ## Product Spec
 ### User Stories
