@@ -15,13 +15,13 @@ Twittermenti is a sentiment analysis app of tweets that lets us know user sentim
 ## Product Spec
 ### User Stories
 
-- [ ] User shall be able to enter a product, brand, or service with 'at' or 'hashtag' symbol and get a emoji based on user sentiment on how they feel about it.
+- [X] User shall be able to enter a product, brand, or service with 'at' or 'hashtag' symbol and get a emoji based on user sentiment on how they feel about it.
 
 ## App Walkthrough
 
 Here's a GIF of how the app works:
 
-<img src="ADD_GIF_LINK" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/80790864-d4a76a80-8b44-11ea-913a-7a2b141dd685.gif" width=250><br>
 
 ## Open-source libraries used
 
