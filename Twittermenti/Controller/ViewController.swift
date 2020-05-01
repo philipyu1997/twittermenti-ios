@@ -13,11 +13,17 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
+    // Outlets
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sentimentLabel: UILabel!
-    
-    let swifter = Swifter(consumerKey: "INSERT TWITTER API KEY", consumerSecret: "INSERT TWITTER SECRET API KEY")
+
+    // Properties
+    let API_KEY = fetchAPIKey(name: "API_KEY")
+    let API_SECRET_KEY = fetchAPIKey(name: "API_SECRET_KEY")
+    var swifter: Swifter {
+        return Swifter(consumerKey: API_KEY, consumerSecret: API_SECRET_KEY)
+    }
     let sentimentClassifier = TweetSentimentClassifier()
     let tweetCount = 100
     
