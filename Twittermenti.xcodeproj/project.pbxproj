@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		726FDC7C245BDC1400F25F91 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726FDC73245BDBE600F25F91 /* SwifteriOS.framework */; };
 		726FDC7D245BDC1400F25F91 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 726FDC73245BDBE600F25F91 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		726FDC82245BEB0400F25F91 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FDC81245BEB0400F25F91 /* ApiKeys.swift */; };
+		726FDC82245BEB0400F25F91 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726FDC81245BEB0400F25F91 /* Key.swift */; };
 		726FDC84245BEC9400F25F91 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 726FDC83245BEC9400F25F91 /* ApiKeys.plist */; };
 		72761DA222E13B3B000531EF /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 72761DA122E13B3B000531EF /* TweetSentimentClassifier.mlmodel */; };
 		AD9EC65020FE2EF4002AE9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EC64F20FE2EF4002AE9BF /* AppDelegate.swift */; };
@@ -76,7 +76,7 @@
 /* Begin PBXFileReference section */
 		55CD9F73B8024F3FD88187F5 /* Pods_Twittermenti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twittermenti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		726FDC6A245BDBE600F25F91 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../../../../../../Downloads/Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
-		726FDC81245BEB0400F25F91 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		726FDC81245BEB0400F25F91 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		726FDC83245BEC9400F25F91 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		72761DA122E13B3B000531EF /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 		8E215D63317F2D0F57C1F091 /* Pods-Twittermenti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twittermenti.release.xcconfig"; path = "Target Support Files/Pods-Twittermenti/Pods-Twittermenti.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				72761DA122E13B3B000531EF /* TweetSentimentClassifier.mlmodel */,
-				726FDC81245BEB0400F25F91 /* ApiKeys.swift */,
+				726FDC81245BEB0400F25F91 /* Key.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,7 +385,7 @@
 			files = (
 				72761DA222E13B3B000531EF /* TweetSentimentClassifier.mlmodel in Sources */,
 				AD9EC65220FE2EF4002AE9BF /* ViewController.swift in Sources */,
-				726FDC82245BEB0400F25F91 /* ApiKeys.swift in Sources */,
+				726FDC82245BEB0400F25F91 /* Key.swift in Sources */,
 				AD9EC65020FE2EF4002AE9BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

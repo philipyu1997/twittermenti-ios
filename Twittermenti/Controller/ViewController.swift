@@ -19,8 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sentimentLabel: UILabel!
 
     // Properties
-    let API_KEY = fetchAPIKey(name: "API_KEY")
-    let API_SECRET_KEY = fetchAPIKey(name: "API_SECRET_KEY")
+    let API_KEY = fetchFromPlist(forResource: "ApiKeys", forKey: "API_KEY")
+    let API_SECRET_KEY = fetchFromPlist(forResource: "ApiKeys", forKey: "API_SECRET_KEY")
     var swifter: Swifter {
         guard let apiKey = API_KEY else {
             fatalError("Error fetching API Key. Make sure you have the correct key name")
@@ -86,7 +86,6 @@ class ViewController: UIViewController {
             }
             
             updateUI(with: sentimentScore)
-            
         } catch {
             print("There was an error with making a prediciton, \(error)")
         }

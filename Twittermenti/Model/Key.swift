@@ -8,9 +8,9 @@
 
 import Foundation
 
-func fetchAPIKey(name key: String) -> String? {
+func fetchFromPlist(forResource resource: String, forKey key: String) -> String? {
     
-    let filePath = Bundle.main.path(forResource: "ApiKeys", ofType: "plist")
+    let filePath = Bundle.main.path(forResource: resource, ofType: "plist")
     let plist = NSDictionary(contentsOfFile: filePath!)
     let value = plist?.object(forKey: key) as? String
     
