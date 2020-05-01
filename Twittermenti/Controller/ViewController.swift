@@ -22,7 +22,14 @@ class ViewController: UIViewController {
     let API_KEY = fetchAPIKey(name: "API_KEY")
     let API_SECRET_KEY = fetchAPIKey(name: "API_SECRET_KEY")
     var swifter: Swifter {
-        return Swifter(consumerKey: API_KEY, consumerSecret: API_SECRET_KEY)
+        guard let apiKey = API_KEY else {
+            fatalError("Error fetching API Key. Make sure you have the correct key name")
+        }
+        guard let apiSecretKey = API_SECRET_KEY else {
+            fatalError("Error fetching API Key. Make sure you have the correct key name")
+        }
+
+        return Swifter(consumerKey: apiKey, consumerSecret: apiSecretKey)
     }
     let sentimentClassifier = TweetSentimentClassifier()
     let tweetCount = 100
@@ -42,16 +49,15 @@ class ViewController: UIViewController {
     func fetchTweets() {
         
         if let searchText = textField.text {
-            swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended, success: { (results, metadata) in
-                
+            swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended, success: { (results, _) in
                 var tweets = [TweetSentimentClassifierInput]()
                 
-                for i in 0..<100 {
-                    if let tweet = results[i]["full_text"].string {
+                for num in 0..<100 {
+                    if let tweet = results[num]["full_text"].string {
                         let tweetForClassification = TweetSentimentClassifierInput(text: tweet)
                         
                         tweets.append(tweetForClassification)
-                        print("\(i) \(tweet)")
+                        print("\(num) \(tweet)")
                     }
                 }
                 
@@ -110,4 +116,3 @@ class ViewController: UIViewController {
     }
     
 }
-
