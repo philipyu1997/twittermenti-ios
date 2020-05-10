@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Product Spec](#Product-Spec)
+2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
 4. [Open-Source libraries used](#Open-Source-libraries-used)
 5. [Credits](#Credits)
@@ -12,7 +12,7 @@
 
 Twittermenti is an app that performs sentiment analysis on tweets that lets you know how people feel about certain products, brands or services.
 
-## Product Spec
+## Product Specs
 ### User Stories
 
 - [X] User shall be able to enter a product, brand, or service with 'at' or 'hashtag' symbol and get a emoji based on user sentiment on how they feel about it.
@@ -21,7 +21,7 @@ Twittermenti is an app that performs sentiment analysis on tweets that lets you 
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/80790864-d4a76a80-8b44-11ea-913a-7a2b141dd685.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81493730-b71a8500-9257-11ea-934e-577f6b8012cf.gif" width=250><br>
 
 ## Open-source libraries used
 
@@ -30,4 +30,4 @@ Here's a GIF of how the app works:
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
