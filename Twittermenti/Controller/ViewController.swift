@@ -13,26 +13,20 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sentimentLabel: UILabel!
-
-    // Properties
-    let API_KEY = fetchFromPlist(forResource: "ApiKeys", forKey: "API_KEY")
-    let API_SECRET_KEY = fetchFromPlist(forResource: "ApiKeys", forKey: "API_SECRET_KEY")
-    var swifter: Swifter {
-        guard let apiKey = API_KEY else {
-            fatalError("Error fetching API Key. Make sure you have the correct key name")
-        }
-        guard let apiSecretKey = API_SECRET_KEY else {
-            fatalError("Error fetching API Key. Make sure you have the correct key name")
-        }
-
+    
+    // MARK: - Properties
+    private var swifter: Swifter {
         return Swifter(consumerKey: apiKey, consumerSecret: apiSecretKey)
     }
-    let sentimentClassifier = TweetSentimentClassifier()
-    let tweetCount = 100
+    
+    private let apiKey = Constant.apiKey!
+    private let apiSecretKey = Constant.apiSecretKey!
+    private let sentimentClassifier = TweetSentimentClassifier()
+    private let tweetCount = 100
     
     override func viewDidLoad() {
         
@@ -40,13 +34,17 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: - IBAction Section
+    
     @IBAction func predictPressed(_ sender: Any) {
         
         fetchTweets()
         
     }
     
-    func fetchTweets() {
+    // MARK: - Private Function Section
+    
+    private func fetchTweets() {
         
         if let searchText = textField.text {
             swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended, success: { (results, _) in
@@ -69,7 +67,7 @@ class ViewController: UIViewController {
         
     }
     
-    func makePrediction(with tweets: [TweetSentimentClassifierInput]) {
+    private func makePrediction(with tweets: [TweetSentimentClassifierInput]) {
         
         do {
             let predictions = try self.sentimentClassifier.predictions(inputs: tweets)
@@ -92,7 +90,7 @@ class ViewController: UIViewController {
         
     }
     
-    func updateUI(with sentimentScore: Int) {
+    private func updateUI(with sentimentScore: Int) {
         
         if sentimentScore > 20 {
             self.sentimentLabel.text = "😍"
