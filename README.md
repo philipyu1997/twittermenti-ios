@@ -4,8 +4,9 @@
 1. [Overview](#Overview)
 2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
-4. [Open-Source libraries used](#Open-Source-libraries-used)
-5. [Credits](#Credits)
+4. [APIs Used](#APIs-Used)
+5. [Open-Source libraries used](#Open-Source-libraries-used)
+6. [Credits](#Credits)
 
 ## Overview
 ### Description
@@ -22,6 +23,10 @@ Twittermenti is an app that performs sentiment analysis on tweets that lets you 
 Here's a GIF of how the app works:
 
 <img src="https://user-images.githubusercontent.com/35745973/81493730-b71a8500-9257-11ea-934e-577f6b8012cf.gif" width=250><br>
+
+## APIs Used
+
+- [Twitter API](https://developer.twitter.com/en) - Allow developers to access core Twitter data — including update timelines, status data, and user information.
 
 ## Open-source libraries used
 
