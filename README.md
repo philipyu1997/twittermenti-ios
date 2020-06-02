@@ -4,8 +4,8 @@
 1. [Overview](#Overview)
 2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
-4. [APIs Used](#APIs-Used)
-5. [Open-Source libraries used](#Open-Source-libraries-used)
+4. [APIs](#APIs)
+5. [Libraries](#Libraries)
 6. [Credits](#Credits)
 
 ## Overview
@@ -22,17 +22,17 @@ Twittermenti is an app that performs sentiment analysis on tweets that lets you 
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/81493730-b71a8500-9257-11ea-934e-577f6b8012cf.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81493730-b71a8500-9257-11ea-934e-577f6b8012cf.gif" width=250>
 
-## APIs Used
+## APIs
 
 - [Twitter API](https://developer.twitter.com/en) - Allow developers to access core Twitter data — including update timelines, status data, and user information.
 
-## Open-source libraries used
+## Libraries
 
 - [Swifter](https://github.com/mattdonnelly/Swifter) - A Twitter framework for iOS & OS X written in Swift.
-- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) - A library that makes it easy to deal with JSON data in Swift
+- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) - A library that makes it easy to deal with JSON data in Swift.
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/).
